@@ -218,11 +218,11 @@ figcaption {
 
 * Ajuste adicional para organizar imágenes */
 .imagenes-videojuegos {
-    justify-content: center;   /* Cambia de 'flex-start' a 'center' */
+    justify-content: center;   
 }
 
 .producto {
-    flex-basis: calc(20% - 20px);  /* Ajusta para mantener 5 elementos por fila */
+    flex-basis: calc(20% - 20px);  
 }
 
 #aboutSection, #contactSection {
@@ -235,12 +235,12 @@ figcaption {
     text-align: center;
 }
 
-/* Barra de navegación */
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;  /* Fondo de la barra de navegación */
+    background-color: #333;  
     padding: 10px 20px;
 }
 
@@ -312,4 +312,225 @@ figcaption {
     width: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+}
+
+
+.header-title {
+    font-size: 24px; 
+    color: white;    
+    margin-left: 20px; 
+    font-family: 'Arial', sans-serif; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.logo {
+    margin-right: 15px; 
+}
+
+
+.header-title {
+    font-size: 40px;                              
+    color: red;                             
+    margin: 0 auto;                               
+    font-family: 'Impact', sans-serif;           
+    text-transform: uppercase;                    
+    letter-spacing: 2px;                          
+    font-weight: bold;                            
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+    display: block;                               
+    text-align: center;                           
+    padding: 10px 20px;                           
+    
+    
+    border: 4px solid red;                    
+    border-radius: 15px;                          
+    box-shadow: 0px 0px 15px rgb(25, 0, 255); 
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #333; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content li {
+    padding: 12px 16px; 
+}
+
+
+.dropdown-content a {
+    color: white; 
+    text-decoration: none; 
+}
+
+
+.dropdown-content a:hover {
+    background-color: #555; 
+}
+
+
+.login-button {
+    font-weight: 700;
+    background-color:black;
+    color: red; 
+    padding: 9px 25px; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.login-button:hover {
+    background-color: white; 
+}
+
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; 
+}
+
+.logo img {
+    height: 50px; 
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-links li {
+    position: relative; 
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: black; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content a {
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block; 
+}
+
+.dropdown-content a:hover {
+    background-color:black; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 6px 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.imagenes-videojuegos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto {
+    margin: 10px;
+    text-align: center;
+}
+
+.producto figcaption {
+    margin-top: 8px;                 
+    font-weight: bold;               
+    font-size: 14px;                
+    color: #333;                     
+}
+
+
+.precio {
+    display: block;                  
+    margin-top: 5px;                 
+    font-weight: normal;             
+    color: #d32f2f;                  
+    
+    font-size: 16px;                 
+}
+
+.nombre {
+    font-size: 16px;         
+    font-weight: bold;        
+    margin-bottom: 5px;       
+}
+
+
+.precio {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid blue;      
+    border-radius: 5px;              
+    background-color: #eaffea;       
+    color: red;                  
+    font-weight: bold;               
+    font-size: 14px;                
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);  
 }

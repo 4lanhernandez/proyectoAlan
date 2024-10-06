@@ -1,22 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Selección de los botones por ID
-    const loginButton = document.getElementById("login");
-    const searchButton = document.getElementById("search");
+    // Los botones de información
     const aboutButton = document.getElementById("about");
     const emailButton = document.getElementById("email");
     const contactButton = document.getElementById("contact");
 
-    // Funcionalidades de botones
-    loginButton.addEventListener("click", () => {
-        window.location.href = "https://www.example.com/login";
-    });
-
-    searchButton.addEventListener("click", () => {
-        window.location.href = "https://www.example.com/search";
-    });
-
+    // Funciones de los botones
     aboutButton.addEventListener("click", () => {
-        alert("Esta es la sección 'About' de nuestro proyecto.");
+        alert("Amazing videogames es tu destino en línea para descubrir y explorar el emocionante mundo de los videojuegos.");
     });
 
     emailButton.addEventListener("click", () => {
@@ -26,4 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
     contactButton.addEventListener("click", () => {
         alert("Gracias por contactarnos. Estaremos en contacto pronto.");
     });
-});
+
+    // Obtener los enlaces del menú desplegable
+    const instagramLink = document.getElementById("instagramLink");
+    const facebookLink = document.getElementById("facebookLink");
+    const twitterLink = document.getElementById("twitterLink");
+
+    // Redireccionar a las páginas de login correspondientes
+    instagramLink.addEventListener("click", () => {
+        window.location.href = "https://www.instagram.com/accounts/login/";
+    });
+
+    facebookLink.addEventListener("click", () => {
+        window.location.href = "https://www.facebook.com/login/";
+    });
+
+    twitterLink.addEventListener("click", () => {
+        window.location.href = "https://twitter.com/login";
+    });
+        });
+

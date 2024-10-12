@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Inicio de sesión</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="contactForm">
+                <!-- Campo para nombre -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
+
+            <form id="phoneForm">
+                <label for="phoneNumber">Número telefónico:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{8}" placeholder="Número de 8 dígitos">
+                <button type="submit">iniciar sesión</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
